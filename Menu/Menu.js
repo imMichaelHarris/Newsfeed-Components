@@ -2,7 +2,7 @@
 const toggleMenu = () => {
   // Toggle the "menu--open" class on your menu refence. 
   menu.classList.toggle('menu--open');
-  menu.classList.contains('menu--open') ? TweenMax.to('.menu', .3, {left:0}) : TweenMax.to('.menu', .3, {left:-350});
+  menu.classList.contains('menu--open') ? TweenMax.to('.menu', .3, {left:0}) : TweenMax.to('.menu', .3, {left:-360});
   
 }
 
@@ -16,8 +16,8 @@ menuButton.addEventListener('click', toggleMenu);
 function closeMenu(){
   if(menu.classList.contains('menu--open')){
     menu.classList.remove('menu--open');
-    TweenMax.to('.menu', .3, {left:-350});
-  }
+    TweenMax.to('.menu', .3, {left:-360});
+  } 
 }
 
 const articleBox = document.querySelector('.articles');
