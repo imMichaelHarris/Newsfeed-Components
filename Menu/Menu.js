@@ -1,7 +1,7 @@
 
 const toggleMenu = (event) => {
   // Toggle the "menu--open" class on your menu refence. 
-  console.log(event)
+    menu.classList.toggle('menu--open');
 }
 
 // Start Here: Create a reference to the ".menu" class
